@@ -1,0 +1,38 @@
+# Nextflow
+work/
+.nextflow*
+*.html
+*.txt
+results/
+results_test/
+
+# Docker
+*.tar.gz
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+# pixi environments
+.pixi/*
+!.pixi/config.toml
