@@ -67,7 +67,7 @@ nextflow run main.nf \
 #### Example Samplesheet (samplesheet.csv)
 
 ```csv
-sample_id,bam
+sample_id,bam_file
 sample1,/path/to/sample1.bam
 sample2,/path/to/sample2.bam
 P9_PB_V2_Cilta_Pre_RM_GEX_5,/path/to/P9_PB_V2_Cilta_Pre_RM_GEX_5.bam
@@ -102,7 +102,7 @@ nextflow run main.nf \
 
 | Parameter | Description |
 |-----------|-------------|
-| `--samplesheet` | Path to CSV file with sample_id and bam_file columns |
+| `--samplesheet` | Path to CSV file with `sample_id` and `bam_file` columns |
 | `--outdir` | Output directory for results |
 
 ### Optional Parameters
@@ -123,8 +123,6 @@ nextflow run main.nf \
 |-----------|---------|-------------|
 | `--min_count` | 75 | Minimum read count threshold |
 | `--max_count` | null | Maximum read count threshold |
-| `--min_length_to_median` | 0.75 | Minimum length to median ratio |
-| `--max_length_to_median` | 1.25 | Maximum length to median ratio |
 | `--min_likelihood` | 0.0 | Minimum likelihood score |
 | `--drop_iterations` | 4 | Number of iterations for allele dropout |
 | `--drop_threshold` | 0.1 | Threshold for allele dropout |

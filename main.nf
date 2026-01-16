@@ -51,12 +51,12 @@ workflow {
 
     
     // Parse input samplesheet
-    // Expected columns: sample, bam
+    // Expected columns: sample_id, bam_file
     ch_samplesheet = Channel.fromPath(params.samplesheet, checkIfExists: true)
         .splitCsv(header: true, sep: ',')
         .map { row -> 
             def sample_id = row.sample_id
-            def bam_file = file(row.bam, checkIfExists: true)
+            def bam_file = file(row.bam_file, checkIfExists: true)
             return tuple(sample_id, bam_file)
         }
 
