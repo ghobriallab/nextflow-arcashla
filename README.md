@@ -67,7 +67,7 @@ nextflow run main.nf \
 #### Example Samplesheet (samplesheet.csv)
 
 ```csv
-sample_id,bam_file
+sample_id,bam
 sample1,/path/to/sample1.bam
 sample2,/path/to/sample2.bam
 P9_PB_V2_Cilta_Pre_RM_GEX_5,/path/to/P9_PB_V2_Cilta_Pre_RM_GEX_5.bam
